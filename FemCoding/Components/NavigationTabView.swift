@@ -11,6 +11,7 @@ struct NavigationTabView: View {
     
     @State private var isProfile = false
     @State private var isEvents = false
+    @State private var isSearch = false
     
     var body: some View {
         
@@ -32,10 +33,21 @@ struct NavigationTabView: View {
                        Button(action: {
                            isEvents = true
                        }) {
+                           Text("Eventos")
                            Image(systemName: "calendar")
                                .font(.title)
                        }
                        NavigationLink(destination: Events(), isActive: $isEvents){
+                           EmptyView()
+                       }
+                       
+                       Button(action: {
+                           isSearch = true
+                       }) {
+                           Image(systemName: "magnifyingglass")
+                               .font(.title)
+                       }
+                       NavigationLink(destination: SearchBar(), isActive: $isSearch){
                            EmptyView()
                        }
                    }
@@ -62,6 +74,7 @@ struct NavigationTabView: View {
                     }
                 
             }
+            .navigationBarHidden(true)
         }
     }
 }

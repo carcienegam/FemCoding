@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FB279DA62AFD587800531513 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB279DA52AFD587800531513 /* Events.swift */; };
 		FB279DA82AFD590000531513 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB279DA72AFD590000531513 /* Profile.swift */; };
+		FB4990522AFD6C5500BA4CB1 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4990512AFD6C5500BA4CB1 /* SearchBar.swift */; };
 		FB5BA0042AFD4DFC00D94C7E /* FemCodingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5BA0032AFD4DFC00D94C7E /* FemCodingApp.swift */; };
 		FB5BA0062AFD4DFC00D94C7E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5BA0052AFD4DFC00D94C7E /* ContentView.swift */; };
 		FB5BA0082AFD4E0100D94C7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5BA0072AFD4E0100D94C7E /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		FB279DA52AFD587800531513 /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
 		FB279DA72AFD590000531513 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		FB4990512AFD6C5500BA4CB1 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		FB5BA0002AFD4DFC00D94C7E /* FemCoding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FemCoding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5BA0032AFD4DFC00D94C7E /* FemCodingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FemCodingApp.swift; sourceTree = "<group>"; };
 		FB5BA0052AFD4DFC00D94C7E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				FB5BA0032AFD4DFC00D94C7E /* FemCodingApp.swift */,
 				FB279DA52AFD587800531513 /* Events.swift */,
 				FB279DA72AFD590000531513 /* Profile.swift */,
+				FB4990512AFD6C5500BA4CB1 /* SearchBar.swift */,
 				FBE7596D2AFD500100075B44 /* AuthenticationView.swift */,
 				FBE759842AFD547300075B44 /* Components */,
 				FBE7596F2AFD500C00075B44 /* Login.swift */,
@@ -221,6 +224,7 @@
 				FBE759742AFD503700075B44 /* Splash.swift in Sources */,
 				FBE759792AFD507500075B44 /* Aplicacion.swift in Sources */,
 				FB279DA82AFD590000531513 /* Profile.swift in Sources */,
+				FB4990522AFD6C5500BA4CB1 /* SearchBar.swift in Sources */,
 				FBE759722AFD502B00075B44 /* Register.swift in Sources */,
 				FBE759812AFD50AA00075B44 /* RoadtoPrep.swift in Sources */,
 			);

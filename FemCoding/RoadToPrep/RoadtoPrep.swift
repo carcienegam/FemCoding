@@ -18,7 +18,7 @@ struct RoadtoPrep: View {
    
     
     var body: some View {
-        NavigationView{ // ELIMINAR CUANDO ESTE TODO EL FLUJO !!!!!!
+        
             VStack{
                 Text("Camino a prepararte")
                     .font(.title)
@@ -138,8 +138,6 @@ struct RoadtoPrep: View {
                     .padding()
                     
                 }
-            }
-            
         }
     }
 }
