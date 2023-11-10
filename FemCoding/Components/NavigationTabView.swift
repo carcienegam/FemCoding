@@ -59,7 +59,7 @@ struct NavigationTabView: View {
                     HomeView()
                 }
                 .tabItem{
-                    Label("", systemImage: "house")
+                    Label("Home", systemImage: "house")
                     
                 }
                 
