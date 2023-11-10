@@ -16,11 +16,11 @@
 		FB279DA82AFD590000531513 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB279DA72AFD590000531513 /* Profile.swift */; };
 		FB4990522AFD6C5500BA4CB1 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4990512AFD6C5500BA4CB1 /* SearchBar.swift */; };
 		FB4990542AFD6FCE00BA4CB1 /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4990532AFD6FCE00BA4CB1 /* Sidebar.swift */; };
-		FB4990562AFDABE800BA4CB1 /* ButtonsGeneral.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4990552AFDABE800BA4CB1 /* ButtonsGeneral.swift */; };
 		FB5BA0042AFD4DFC00D94C7E /* FemCodingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5BA0032AFD4DFC00D94C7E /* FemCodingApp.swift */; };
 		FB5BA0062AFD4DFC00D94C7E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5BA0052AFD4DFC00D94C7E /* ContentView.swift */; };
 		FB5BA0082AFD4E0100D94C7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5BA0072AFD4E0100D94C7E /* Assets.xcassets */; };
 		FB5BA00B2AFD4E0100D94C7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5BA00A2AFD4E0100D94C7E /* Preview Assets.xcassets */; };
+		FBC4D2812AFE265700F9958B /* UnderConstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC4D2802AFE265700F9958B /* UnderConstruction.swift */; };
 		FBE7596E2AFD500100075B44 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE7596D2AFD500100075B44 /* AuthenticationView.swift */; };
 		FBE759702AFD500C00075B44 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE7596F2AFD500C00075B44 /* Login.swift */; };
 		FBE759722AFD502B00075B44 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE759712AFD502A00075B44 /* Register.swift */; };
@@ -47,12 +47,12 @@
 		FB279DA72AFD590000531513 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		FB4990512AFD6C5500BA4CB1 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		FB4990532AFD6FCE00BA4CB1 /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
-		FB4990552AFDABE800BA4CB1 /* ButtonsGeneral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsGeneral.swift; sourceTree = "<group>"; };
 		FB5BA0002AFD4DFC00D94C7E /* FemCoding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FemCoding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5BA0032AFD4DFC00D94C7E /* FemCodingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FemCodingApp.swift; sourceTree = "<group>"; };
 		FB5BA0052AFD4DFC00D94C7E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FB5BA0072AFD4E0100D94C7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB5BA00A2AFD4E0100D94C7E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FBC4D2802AFE265700F9958B /* UnderConstruction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderConstruction.swift; sourceTree = "<group>"; };
 		FBE7596D2AFD500100075B44 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		FBE7596F2AFD500C00075B44 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		FBE759712AFD502A00075B44 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
@@ -114,6 +114,7 @@
 				FB5BA0032AFD4DFC00D94C7E /* FemCodingApp.swift */,
 				FB279DA52AFD587800531513 /* Events.swift */,
 				FB279DA72AFD590000531513 /* Profile.swift */,
+				FBC4D2802AFE265700F9958B /* UnderConstruction.swift */,
 				FB4990532AFD6FCE00BA4CB1 /* Sidebar.swift */,
 				FB4990512AFD6C5500BA4CB1 /* SearchBar.swift */,
 				FBE7596D2AFD500100075B44 /* AuthenticationView.swift */,
@@ -157,7 +158,6 @@
 				FBE759852AFD548700075B44 /* GeneralPickerField.swift */,
 				FBE759872AFD549400075B44 /* GeneralTextField.swift */,
 				FBE759892AFD54A100075B44 /* NavigationTabView.swift */,
-				FB4990552AFDABE800BA4CB1 /* ButtonsGeneral.swift */,
 				6168327E2AFDCAC100DADE95 /* TabStyleTiktok.swift */,
 			);
 			path = Components;
@@ -236,6 +236,7 @@
 				FBE7597D2AFD508D00075B44 /* Entrevistas.swift in Sources */,
 				FB5BA0062AFD4DFC00D94C7E /* ContentView.swift in Sources */,
 				FB5BA0042AFD4DFC00D94C7E /* FemCodingApp.swift in Sources */,
+				FBC4D2812AFE265700F9958B /* UnderConstruction.swift in Sources */,
 				FBE7597F2AFD509B00075B44 /* OfertaNegociacion.swift in Sources */,
 				FBE7598A2AFD54A100075B44 /* NavigationTabView.swift in Sources */,
 				FB279DA62AFD587800531513 /* Events.swift in Sources */,
@@ -246,7 +247,6 @@
 				FBE7597B2AFD508000075B44 /* Curriculum.swift in Sources */,
 				FBE7596E2AFD500100075B44 /* AuthenticationView.swift in Sources */,
 				FBE759702AFD500C00075B44 /* Login.swift in Sources */,
-				FB4990562AFDABE800BA4CB1 /* ButtonsGeneral.swift in Sources */,
 				FBE759742AFD503700075B44 /* Splash.swift in Sources */,
 				FBE759792AFD507500075B44 /* Aplicacion.swift in Sources */,
 				FB279DA82AFD590000531513 /* Profile.swift in Sources */,

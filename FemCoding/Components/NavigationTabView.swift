@@ -13,26 +13,28 @@ struct NavigationTabView: View {
     
     var body: some View {
         NavigationView {
-            TabView{
-                NavigationStack{
-                    HomeView()
-                        .environmentObject(HomeViewModel())
-                }
-                .tabItem{
-                    Label("Inicio", systemImage: "house")
-                        .font(.title)
+            ZStack{
+                TabView{
+                    NavigationStack{
+                        HomeView()
+                            .environmentObject(HomeViewModel())
+                    }
+                    .tabItem{
+                        Label("Inicio", systemImage: "house")
+                            .font(.title)
+                        
+                    }
                     
+                    UnderConstruction()
+                        .tabItem{
+                            Label("Subir", systemImage: "plus.square.fill")
+                        }
+                    
+                    RoadtoPrep()
+                        .tabItem{
+                            Label("Camino", systemImage: "road.lanes")
+                        }
                 }
-                
-                RoadtoPrep()
-                    .tabItem{
-                        Label("Subir", systemImage: "plus.square.fill")
-                    }
-                
-                RoadtoPrep()
-                    .tabItem{
-                        Label("Camino", systemImage: "road.lanes")
-                    }
             }
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {

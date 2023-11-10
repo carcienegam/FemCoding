@@ -28,7 +28,9 @@ struct HomeView: View {
                 .foregroundColor(Color(.black))
             }
         }
+    
     }
+    
 }
 
 struct HomeView_Previews: PreviewProvider {

@@ -36,10 +36,14 @@ struct AuthenticationView: View {
                 
 
                     Button("¿Olvidaste tu contraseña?") {
-                         //isForgotPassword = true
+                        isForgotPassword = true
                     }
                     .buttonStyle(GeneralButton(buttonColor: Color.clear, textColor: Color("DarkGray")))
-                    .padding(.top, 20)
+                    .padding()
+                
+                NavigationLink(destination: UnderConstruction(), isActive: $isForgotPassword){
+                    EmptyView()
+                }
                     
                     Button("Registro"){
                         isRegistering = true
