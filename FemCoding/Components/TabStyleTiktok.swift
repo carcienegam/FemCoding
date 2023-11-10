@@ -1,11 +1,13 @@
 //
-//  HomeView.swift
+//  TabStyleTiktok.swift
 //  FemCoding
 //
-//  Created by Alumno on 09/11/23.
+//  Created by Daniela Ramos Garcia on 09/11/23.
 //
 
+
 import SwiftUI
+
 
 class selectedmanager:ObservableObject{
     @Published var titel = ""
@@ -25,7 +27,7 @@ var items:[model]=[
     model(titel:"Post", tab: .post),
     model(titel:"Her", tab: .her)
 ]
-struct TabNavigationTiktok: View {
+struct TabStyleTiktok: View {
     @StateObject var vm = selectedmanager()
     var body: some View {
         VStack{
@@ -61,12 +63,12 @@ struct TabNavigationTiktok: View {
                 .padding(.horizontal,80)
             })
         }
-        .padding(.vertical,-4)
+        .padding(.vertical,-3)
     }
 }
 
-struct TabNavigationTiktok_Previews: PreviewProvider {
+struct TabStyleTiktok_Previews: PreviewProvider {
     static var previews: some View {
-        TabNavigationTiktok()
+        TabStyleTiktok()
     }
 }

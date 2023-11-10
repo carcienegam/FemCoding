@@ -16,6 +16,7 @@ struct NavigationTabView: View {
             TabView{
                 NavigationStack{
                     HomeView()
+                        .environmentObject(HomeViewModel())
                 }
                 .tabItem{
                     Label("Inicio", systemImage: "house")

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		616832732AFDC8E800DADE95 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616832722AFDC8E800DADE95 /* HomeView.swift */; };
+		616832752AFDC8F600DADE95 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616832742AFDC8F600DADE95 /* HomeViewModel.swift */; };
+		616832772AFDC90900DADE95 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616832762AFDC90900DADE95 /* HomeModel.swift */; };
+		616832792AFDC91300DADE95 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616832782AFDC91300DADE95 /* Post.swift */; };
+		6168327F2AFDCAC100DADE95 /* TabStyleTiktok.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6168327E2AFDCAC100DADE95 /* TabStyleTiktok.swift */; };
 		FB279DA62AFD587800531513 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB279DA52AFD587800531513 /* Events.swift */; };
 		FB279DA82AFD590000531513 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB279DA72AFD590000531513 /* Profile.swift */; };
 		FB4990522AFD6C5500BA4CB1 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4990512AFD6C5500BA4CB1 /* SearchBar.swift */; };
@@ -30,10 +35,14 @@
 		FBE759862AFD548700075B44 /* GeneralPickerField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE759852AFD548700075B44 /* GeneralPickerField.swift */; };
 		FBE759882AFD549400075B44 /* GeneralTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE759872AFD549400075B44 /* GeneralTextField.swift */; };
 		FBE7598A2AFD54A100075B44 /* NavigationTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE759892AFD54A100075B44 /* NavigationTabView.swift */; };
-		FBE7598C2AFD550900075B44 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE7598B2AFD550900075B44 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		616832722AFDC8E800DADE95 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		616832742AFDC8F600DADE95 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		616832762AFDC90900DADE95 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		616832782AFDC91300DADE95 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		6168327E2AFDCAC100DADE95 /* TabStyleTiktok.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabStyleTiktok.swift; sourceTree = "<group>"; };
 		FB279DA52AFD587800531513 /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
 		FB279DA72AFD590000531513 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		FB4990512AFD6C5500BA4CB1 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
@@ -58,7 +67,6 @@
 		FBE759852AFD548700075B44 /* GeneralPickerField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPickerField.swift; sourceTree = "<group>"; };
 		FBE759872AFD549400075B44 /* GeneralTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralTextField.swift; sourceTree = "<group>"; };
 		FBE759892AFD54A100075B44 /* NavigationTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTabView.swift; sourceTree = "<group>"; };
-		FBE7598B2AFD550900075B44 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,9 +80,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		616832712AFDC8BB00DADE95 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				616832722AFDC8E800DADE95 /* HomeView.swift */,
+				616832742AFDC8F600DADE95 /* HomeViewModel.swift */,
+				616832762AFDC90900DADE95 /* HomeModel.swift */,
+				616832782AFDC91300DADE95 /* Post.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		FB5B9FF72AFD4DFC00D94C7E = {
 			isa = PBXGroup;
 			children = (
+				616832712AFDC8BB00DADE95 /* Home */,
 				FB5BA0022AFD4DFC00D94C7E /* FemCoding */,
 				FB5BA0012AFD4DFC00D94C7E /* Products */,
 			);
@@ -105,7 +125,6 @@
 				FB5BA0052AFD4DFC00D94C7E /* ContentView.swift */,
 				FB5BA0072AFD4E0100D94C7E /* Assets.xcassets */,
 				FB5BA0092AFD4E0100D94C7E /* Preview Content */,
-				FBE7598B2AFD550900075B44 /* HomeView.swift */,
 			);
 			path = FemCoding;
 			sourceTree = "<group>";
@@ -139,6 +158,7 @@
 				FBE759872AFD549400075B44 /* GeneralTextField.swift */,
 				FBE759892AFD54A100075B44 /* NavigationTabView.swift */,
 				FB4990552AFDABE800BA4CB1 /* ButtonsGeneral.swift */,
+				6168327E2AFDCAC100DADE95 /* TabStyleTiktok.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -218,7 +238,6 @@
 				FB5BA0042AFD4DFC00D94C7E /* FemCodingApp.swift in Sources */,
 				FBE7597F2AFD509B00075B44 /* OfertaNegociacion.swift in Sources */,
 				FBE7598A2AFD54A100075B44 /* NavigationTabView.swift in Sources */,
-				FBE7598C2AFD550900075B44 /* HomeView.swift in Sources */,
 				FB279DA62AFD587800531513 /* Events.swift in Sources */,
 				FBE759832AFD546F00075B44 /* GeneralButton.swift in Sources */,
 				FBE759862AFD548700075B44 /* GeneralPickerField.swift in Sources */,
@@ -232,8 +251,13 @@
 				FBE759792AFD507500075B44 /* Aplicacion.swift in Sources */,
 				FB279DA82AFD590000531513 /* Profile.swift in Sources */,
 				FB4990522AFD6C5500BA4CB1 /* SearchBar.swift in Sources */,
+				616832752AFDC8F600DADE95 /* HomeViewModel.swift in Sources */,
+				6168327F2AFDCAC100DADE95 /* TabStyleTiktok.swift in Sources */,
 				FBE759722AFD502B00075B44 /* Register.swift in Sources */,
 				FB4990542AFD6FCE00BA4CB1 /* Sidebar.swift in Sources */,
+				616832732AFDC8E800DADE95 /* HomeView.swift in Sources */,
+				616832772AFDC90900DADE95 /* HomeModel.swift in Sources */,
+				616832792AFDC91300DADE95 /* Post.swift in Sources */,
 				FBE759812AFD50AA00075B44 /* RoadtoPrep.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
