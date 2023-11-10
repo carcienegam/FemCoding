@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6168326A2AFD9EF700DADE95 /* TabNavigationTiktok.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616832692AFD9EF700DADE95 /* TabNavigationTiktok.swift */; };
-		6168326C2AFDAADA00DADE95 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6168326B2AFDAADA00DADE95 /* HomeViewModel.swift */; };
-		6168326E2AFDAB0200DADE95 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6168326D2AFDAB0200DADE95 /* HomeModel.swift */; };
-		616832702AFDAC5B00DADE95 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6168326F2AFDAC5B00DADE95 /* PostView.swift */; };
 		FB279DA62AFD587800531513 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB279DA52AFD587800531513 /* Events.swift */; };
 		FB279DA82AFD590000531513 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB279DA72AFD590000531513 /* Profile.swift */; };
 		FB4990522AFD6C5500BA4CB1 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4990512AFD6C5500BA4CB1 /* SearchBar.swift */; };
+		FB4990542AFD6FCE00BA4CB1 /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4990532AFD6FCE00BA4CB1 /* Sidebar.swift */; };
+		FB4990562AFDABE800BA4CB1 /* ButtonsGeneral.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4990552AFDABE800BA4CB1 /* ButtonsGeneral.swift */; };
 		FB5BA0042AFD4DFC00D94C7E /* FemCodingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5BA0032AFD4DFC00D94C7E /* FemCodingApp.swift */; };
 		FB5BA0062AFD4DFC00D94C7E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5BA0052AFD4DFC00D94C7E /* ContentView.swift */; };
 		FB5BA0082AFD4E0100D94C7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5BA0072AFD4E0100D94C7E /* Assets.xcassets */; };
@@ -36,13 +34,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		616832692AFD9EF700DADE95 /* TabNavigationTiktok.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNavigationTiktok.swift; sourceTree = "<group>"; };
-		6168326B2AFDAADA00DADE95 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		6168326D2AFDAB0200DADE95 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
-		6168326F2AFDAC5B00DADE95 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		FB279DA52AFD587800531513 /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
 		FB279DA72AFD590000531513 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		FB4990512AFD6C5500BA4CB1 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		FB4990532AFD6FCE00BA4CB1 /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
+		FB4990552AFDABE800BA4CB1 /* ButtonsGeneral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsGeneral.swift; sourceTree = "<group>"; };
 		FB5BA0002AFD4DFC00D94C7E /* FemCoding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FemCoding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5BA0032AFD4DFC00D94C7E /* FemCodingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FemCodingApp.swift; sourceTree = "<group>"; };
 		FB5BA0052AFD4DFC00D94C7E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,17 +72,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		616832642AFD856E00DADE95 /* HomeView */ = {
-			isa = PBXGroup;
-			children = (
-				FBE7598B2AFD550900075B44 /* HomeView.swift */,
-				6168326D2AFDAB0200DADE95 /* HomeModel.swift */,
-				6168326B2AFDAADA00DADE95 /* HomeViewModel.swift */,
-				6168326F2AFDAC5B00DADE95 /* PostView.swift */,
-			);
-			path = HomeView;
-			sourceTree = "<group>";
-		};
 		FB5B9FF72AFD4DFC00D94C7E = {
 			isa = PBXGroup;
 			children = (
@@ -106,10 +91,10 @@
 		FB5BA0022AFD4DFC00D94C7E /* FemCoding */ = {
 			isa = PBXGroup;
 			children = (
-				616832642AFD856E00DADE95 /* HomeView */,
 				FB5BA0032AFD4DFC00D94C7E /* FemCodingApp.swift */,
 				FB279DA52AFD587800531513 /* Events.swift */,
 				FB279DA72AFD590000531513 /* Profile.swift */,
+				FB4990532AFD6FCE00BA4CB1 /* Sidebar.swift */,
 				FB4990512AFD6C5500BA4CB1 /* SearchBar.swift */,
 				FBE7596D2AFD500100075B44 /* AuthenticationView.swift */,
 				FBE759842AFD547300075B44 /* Components */,
@@ -120,6 +105,7 @@
 				FB5BA0052AFD4DFC00D94C7E /* ContentView.swift */,
 				FB5BA0072AFD4E0100D94C7E /* Assets.xcassets */,
 				FB5BA0092AFD4E0100D94C7E /* Preview Content */,
+				FBE7598B2AFD550900075B44 /* HomeView.swift */,
 			);
 			path = FemCoding;
 			sourceTree = "<group>";
@@ -152,7 +138,7 @@
 				FBE759852AFD548700075B44 /* GeneralPickerField.swift */,
 				FBE759872AFD549400075B44 /* GeneralTextField.swift */,
 				FBE759892AFD54A100075B44 /* NavigationTabView.swift */,
-				616832692AFD9EF700DADE95 /* TabNavigationTiktok.swift */,
+				FB4990552AFDABE800BA4CB1 /* ButtonsGeneral.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -228,7 +214,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBE7597D2AFD508D00075B44 /* Entrevistas.swift in Sources */,
-				6168326C2AFDAADA00DADE95 /* HomeViewModel.swift in Sources */,
 				FB5BA0062AFD4DFC00D94C7E /* ContentView.swift in Sources */,
 				FB5BA0042AFD4DFC00D94C7E /* FemCodingApp.swift in Sources */,
 				FBE7597F2AFD509B00075B44 /* OfertaNegociacion.swift in Sources */,
@@ -237,20 +222,19 @@
 				FB279DA62AFD587800531513 /* Events.swift in Sources */,
 				FBE759832AFD546F00075B44 /* GeneralButton.swift in Sources */,
 				FBE759862AFD548700075B44 /* GeneralPickerField.swift in Sources */,
-				616832702AFDAC5B00DADE95 /* PostView.swift in Sources */,
 				FBE759762AFD504F00075B44 /* Estudio.swift in Sources */,
 				FBE759882AFD549400075B44 /* GeneralTextField.swift in Sources */,
 				FBE7597B2AFD508000075B44 /* Curriculum.swift in Sources */,
 				FBE7596E2AFD500100075B44 /* AuthenticationView.swift in Sources */,
 				FBE759702AFD500C00075B44 /* Login.swift in Sources */,
+				FB4990562AFDABE800BA4CB1 /* ButtonsGeneral.swift in Sources */,
 				FBE759742AFD503700075B44 /* Splash.swift in Sources */,
 				FBE759792AFD507500075B44 /* Aplicacion.swift in Sources */,
-				6168326A2AFD9EF700DADE95 /* TabNavigationTiktok.swift in Sources */,
 				FB279DA82AFD590000531513 /* Profile.swift in Sources */,
 				FB4990522AFD6C5500BA4CB1 /* SearchBar.swift in Sources */,
 				FBE759722AFD502B00075B44 /* Register.swift in Sources */,
+				FB4990542AFD6FCE00BA4CB1 /* Sidebar.swift in Sources */,
 				FBE759812AFD50AA00075B44 /* RoadtoPrep.swift in Sources */,
-				6168326E2AFDAB0200DADE95 /* HomeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

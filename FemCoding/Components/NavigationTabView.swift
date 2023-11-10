@@ -9,75 +9,66 @@ import SwiftUI
 
 struct NavigationTabView: View {
     
-    @State private var isProfile = false
-    @State private var isEvents = false
-    @State private var isSearch = false
+    @State private var isSidebar = false
     
     var body: some View {
-        
-        VStack {
-                   // Header with profile and calendar buttons
-                   HStack {
-                       Button(action: {
-                           isProfile = true
-                       }) {
-                           Image(systemName: "person.circle")
-                               .font(.title)
-                       }
-                       NavigationLink(destination: Profile(), isActive: $isProfile){
-                           EmptyView()
-                       }
-                       
-                       Spacer()
-                       
-                       Button(action: {
-                           isEvents = true
-                       }) {
-                           Text("Eventos")
-                           Image(systemName: "calendar")
-                               .font(.title)
-                       }
-                       NavigationLink(destination: Events(), isActive: $isEvents){
-                           EmptyView()
-                       }
-                       
-                       Button(action: {
-                           isSearch = true
-                       }) {
-                           Image(systemName: "magnifyingglass")
-                               .font(.title)
-                       }
-                       NavigationLink(destination: SearchBar(), isActive: $isSearch){
-                           EmptyView()
-                       }
-                   }
-                   .padding()
-                   .foregroundColor(Color("DarkGray"))
-            
+        NavigationView {
             TabView{
                 NavigationStack{
                     HomeView()
                 }
                 .tabItem{
-                    Label("Home", systemImage: "house")
+                    Label("Inicio", systemImage: "house")
+                        .font(.title)
                     
                 }
                 
                 RoadtoPrep()
                     .tabItem{
-                        Label("", systemImage: "plus.square.fill")
+                        Label("Subir", systemImage: "plus.square.fill")
                     }
                 
                 RoadtoPrep()
                     .tabItem{
-                        Label("", systemImage: "road.lanes")
+                        Label("Camino", systemImage: "road.lanes")
                     }
-                
             }
-            .navigationBarHidden(true)
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                    
+                ToolbarItem(placement: .principal) {
+                    HStack {
+                        NavigationLink(destination: Sidebar(isSidebarOpen: $isSidebar)){
+                            Image(systemName: "person.circle")
+                                .font(.title)
+                        }
+                        
+                        Spacer()
+                        
+                        NavigationLink(destination: Events()){
+                            Text("Eventos")
+                            Image(systemName: "calendar")
+                        }
+                        
+                        NavigationLink(destination: SearchBar()){
+                            Image(systemName: "magnifyingglass")
+                                
+                        }
+                        
+                            
+                        }
+                    .foregroundColor(Color("AppleGray"))
+                    
+                    }
+                }
+            
+        
         }
+        .navigationBarBackButtonHidden(true)
     }
+    
 }
+
 
 struct NavigationTabView_Previews: PreviewProvider {
     static var previews: some View {

@@ -22,6 +22,7 @@ struct AuthenticationView: View {
                     .frame(height: 180)
                     .padding()
                     .padding(.bottom, 50)
+
                     
                     Button("Iniciar Sesión"){
                         isLogingin = true
@@ -32,7 +33,8 @@ struct AuthenticationView: View {
                     NavigationLink(destination: Login(), isActive: $isLogingin){
                         EmptyView()
                     }
-                    
+                
+
                     Button("¿Olvidaste tu contraseña?") {
                          //isForgotPassword = true
                     }
