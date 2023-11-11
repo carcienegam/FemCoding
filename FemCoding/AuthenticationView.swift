@@ -48,7 +48,7 @@ struct AuthenticationView: View {
                     Button("Registro"){
                         isRegistering = true
                     }
-                    .buttonStyle(GeneralButton())
+                    .buttonStyle(GeneralButton(buttonColor: .clear, textColor: Color("AccentColor")))
                     .padding(.horizontal, 80)
                 
                     NavigationLink(destination: Register(), isActive: $isRegistering){

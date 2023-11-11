@@ -6,93 +6,40 @@
 //
 
 import SwiftUI
-   
 
 struct RoadtoPrep: View {
+    
+    @State private var isRegistering = false
+    @State private var isInHome = false
     
     var body: some View {
         
         VStack{
-            Text("Camino a prepararte")
-                .font(.title)
-                .fontWeight(.bold)
-            Image("Mentoria")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(height: 150)
-            Text("Mentoria")
-                .fontWeight(.bold)
             
-            HStack{
-                VStack{
-                    NavigationLink(destination: Estudio()){
-                        VStack{
-                            Image("Estudio")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(height: 80)
-                            Text("Eventos")
-                                .fontWeight(.bold)
-                                .foregroundColor(Color.black)
-                        }
-                    }
-                    
-                    NavigationLink(destination: Aplicacion()){
-                        VStack{
-                            Image("Aplicacion")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(height: 80)
-                            Text("Aplicacion")
-                                .fontWeight(.bold)
-                                .foregroundColor(Color.black)
-                        }
-                    }
-                    
-                    NavigationLink(destination: OfertaNegociacion()){
-                        VStack{
-                            Image("OfertaNegociacion")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(height: 80)
-                            Text("Oferta y Negociacion")
-                                .fontWeight(.bold)
-                                .foregroundColor(Color.black)
-                        }
-                    }
-                }
-                .padding(.horizontal, 40)
-                
-                Spacer()
-                
-                VStack{
-                    
-                    NavigationLink(destination: Curriculum()){
-                        VStack{
-                            Image("Curriculum")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(height: 80)
-                            Text("Curriculum")
-                                .fontWeight(.bold)
-                                .foregroundColor(Color.black)
-                        }
-                    }
-                    
-                    NavigationLink(destination: Entrevistas()){
-                        VStack{
-                            Image("Entrevistas")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(height: 80)
-                            Text("Entrevista")
-                                .fontWeight(.bold)
-                                .foregroundColor(Color.black)
-                        }
-                    }
-                }
-                .padding(.horizontal, 40)
-            }
+            CustomButton(
+                image: Image("Mentoria"),
+                text: "Mentoria",
+                destinationView: AnyView(Mentoria())
+            )
+            
+            CustomButton(
+                image: Image("Curriculum"),
+                text: "Curriculum",
+                destinationView: AnyView(Curriculum())
+            )
+            
+            CustomButton(
+                image: Image("Entrevistas"),
+                text: "Entrevista",
+                destinationView: AnyView(Entrevistas())
+            )
+            
+            CustomButton(
+                image: Image("OfertaNegociacion"),
+                text: "Oferta y Negociacion",
+                destinationView: AnyView(OfertaNegociacion())
+            )
+                        
         }
     }
 }

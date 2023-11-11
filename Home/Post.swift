@@ -15,9 +15,7 @@ struct PostView: View {
     
     var body: some View {
         VStack{
-        Rectangle()
-            .frame(height:3)
-            .foregroundColor(.gray) // Set the color to accent color
+
             HStack{
                 Image(home.nombreImagen)
                     .resizable()
@@ -61,7 +59,9 @@ struct PostView: View {
                 
             }
             .padding(.horizontal,10)
-            
+            Rectangle()
+                .frame(height:2)
+                .foregroundColor(Color("LightGray")) // Set the color to accent color
         }
     }
 }

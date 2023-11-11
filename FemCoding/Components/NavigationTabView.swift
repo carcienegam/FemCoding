@@ -1,77 +1,67 @@
-//
-//  NavigationTabView.swift
-//  FemCoding
-//
-//  Created by Alumno on 09/11/23.
-//
-
 import SwiftUI
 
 struct NavigationTabView: View {
-    
+    @State private var isDetailViewPresented = false
     @State private var isSidebar = false
-    
+
     var body: some View {
+                
         NavigationView {
-            ZStack{
-                TabView{
-                    NavigationStack{
+            VStack {
+                // Header
+                HStack {
+                
+                }
+                .padding(.top, 20)
+                .foregroundColor(.white)
+                .toolbar {
+                    // Placeholders for toolbar items if needed
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        NavigationLink(destination: Sidebar(isSidebarOpen: $isSidebar)){
+                                                    Image(systemName: "person.circle")
+                                                        .font(.title)
+                                                }
+                    }
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        NavigationLink(destination: Events()){
+                           Text("Eventos")
+                           Image(systemName: "calendar")
+                       }
+                    }
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        NavigationLink(destination: Events()){
+                           Image(systemName: "magnifyingglass")
+                       }
+                    }
+                }
+                .foregroundColor(Color("AppleGray"))                
+                
+
+                // Main Content
+                TabView() {
+                    VStack {
                         HomeView()
                             .environmentObject(HomeViewModel())
+                        
+                        Spacer() // Esto ocupará el espacio restante en el eje vertical
+
                     }
                     .tabItem{
                         Label("Inicio", systemImage: "house")
                             .font(.title)
-                        
-                    }
-                    
-                    UnderConstruction()
-                        .tabItem{
-                            Label("Subir", systemImage: "plus.square.fill")
+                                            
                         }
-                    
+
                     RoadtoPrep()
-                        .tabItem{
-                            Label("Camino", systemImage: "road.lanes")
-                        }
+                       .tabItem{
+                           Label("Apoyo", systemImage: "figure.and.child.holdinghands")
+                       }
                 }
             }
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                    
-                ToolbarItem(placement: .principal) {
-                    HStack {
-                        NavigationLink(destination: Sidebar(isSidebarOpen: $isSidebar)){
-                            Image(systemName: "person.circle")
-                                .font(.title)
-                        }
-                        
-                        Spacer()
-                        
-                        NavigationLink(destination: Events()){
-                            Text("Eventos")
-                            Image(systemName: "calendar")
-                        }
-                        
-                        NavigationLink(destination: SearchBar()){
-                            Image(systemName: "magnifyingglass")
-                                
-                        }
-                        
-                            
-                        }
-                    .foregroundColor(Color("AppleGray"))
-                    
-                    }
-                }
-            
-        
         }
-        .navigationBarBackButtonHidden(true)
+        .navigationBarHidden(true)
     }
-    
 }
-
 
 struct NavigationTabView_Previews: PreviewProvider {
     static var previews: some View {
