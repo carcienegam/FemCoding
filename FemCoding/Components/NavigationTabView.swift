@@ -4,7 +4,7 @@ struct NavigationTabView: View {
     @State private var isDetailViewPresented = false
     @State private var isSidebar = false
 
-    var body: some View {
+    var body: some View{
                 
         NavigationView {
             VStack {
