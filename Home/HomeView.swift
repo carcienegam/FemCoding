@@ -11,15 +11,22 @@ import SwiftUI
 struct HomeView: View {
     
     @EnvironmentObject var homeVM: HomeViewModel
+    @StateObject var vm = selectedmanager()
+    
+    @State private var showHerOnly = false
+    var filterHome: [HomeModel]{
+        homeVM.arrHome.filter{ home in
+            (!showHerOnly || home.isHer)
+        }
+    }
     
     var body: some View {
         VStack {
-            TabStyleTiktok()
-            
+            TabStyleTiktok(showHerOnly: $showHerOnly)
             ZStack {
                 // 1. ScrollView se coloca primero para que esté detrás del botón
                 ScrollView(.vertical, showsIndicators: false) {
-                    ForEach(homeVM.arrHome) { item in
+                    ForEach(filterHome) { item in
                         NavigationLink(destination: PostView(home: item)) {
                             PostView(home: item)
                         }
@@ -56,7 +63,9 @@ struct HomeView: View {
                     .padding(.horizontal, 15)
                     .padding(.bottom, 25)
                 }
-                
+                .onChange(of: vm.selected) { newSelectedValue in
+                    showHerOnly = newSelectedValue == .her
+                }
                 // 3. Agregar el TabStyleTiktok encima del botón, si es necesario
                 
             }

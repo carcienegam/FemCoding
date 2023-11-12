@@ -46,7 +46,7 @@ struct Sidebar: View {
                         }
                         .padding(.bottom, 80)
                         
-                        NavigationLink(destination: Profile(), isActive: $isProfile){
+                        NavigationLink(destination: ProfileView(), isActive: $isProfile){
                             EmptyView()
                         }
                     }
@@ -65,7 +65,7 @@ struct Sidebar: View {
                     }
                     .padding(.bottom, 35)
                     
-                    NavigationLink(destination: Profile(), isActive: $isProfile){
+                    NavigationLink(destination: ProfileView(), isActive: $isProfile){
                         EmptyView()
                     }
                     

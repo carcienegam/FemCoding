@@ -15,8 +15,9 @@ struct HomeModel:Identifiable, Equatable{
     var NombrePersona : String
     var nombreImagen :String
     var questions: Int
+    var isHer: Bool
 }
 extension HomeModel {
     
-    public static var defaultHome = HomeModel(titulo: "Inicio de clases", descripcion: "Estoy super emocionada de empezar mis clases como inginiera de Software, ¿Sabías que solo 3 de cada 10 personas estudiando ingeniería son mujeres?", nombreImagenPost: "PostClau", NombrePersona: "@clauarciengam", nombreImagen: "clau", questions: 13)
+    public static var defaultHome = HomeModel(titulo: "Inicio de clases", descripcion: "Estoy super emocionada de empezar mis clases como inginiera de Software, ¿Sabías que solo 3 de cada 10 personas estudiando ingeniería son mujeres?", nombreImagenPost: "PostClau", NombrePersona: "@clauarciengam", nombreImagen: "clau", questions: 13, isHer: false)
 }

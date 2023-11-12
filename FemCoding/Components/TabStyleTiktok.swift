@@ -29,6 +29,8 @@ var items:[model]=[
 ]
 struct TabStyleTiktok: View {
     @StateObject var vm = selectedmanager()
+    @Binding var showHerOnly: Bool // Added binding for showHerOnly
+
     var body: some View {
         VStack{
             HStack{
@@ -37,6 +39,8 @@ struct TabStyleTiktok: View {
                     Button(action:{
                         withAnimation{
                             vm.selected = item.tab
+                            showHerOnly = item.tab == .her // Update showHerOnly based on the selected tab
+
                         }
                     },label:{
                         Text(item.titel).bold()
@@ -70,6 +74,6 @@ struct TabStyleTiktok: View {
 
 struct TabStyleTiktok_Previews: PreviewProvider {
     static var previews: some View {
-        TabStyleTiktok()
+        TabStyleTiktok(showHerOnly: .constant(false))
     }
 }
