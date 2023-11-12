@@ -17,10 +17,10 @@ struct NavigationTabView: View {
                 .toolbar {
                     // Placeholders for toolbar items if needed
                     ToolbarItem(placement: .navigationBarLeading) {
-                        NavigationLink(destination: Sidebar(isSidebarOpen: $isSidebar)){
-                                                    Image(systemName: "person.circle")
-                                                        .font(.title)
-                                                }
+                        NavigationLink(destination: ProfileView()){
+                                Image(systemName: "person.circle")
+                                    .font(.title)
+                            }
                     }
                     ToolbarItem(placement: .navigationBarTrailing) {
                         NavigationLink(destination: Events()){

@@ -36,4 +36,8 @@ class HomeViewModel : ObservableObject{
         arrHome.append(home)
         
     }
+    
+    func getPostsForUser(username: String) -> [HomeModel] {
+            return arrHome.filter { $0.NombrePersona == username }
+        }
 }
