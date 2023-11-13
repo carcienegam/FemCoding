@@ -34,7 +34,7 @@ struct ProfileView: View {
                     Divider()
                         .background(Color("AppleGray"))
                     
-                    ForEach(homeVM.getPostsForUser(username: "@clauarciengam")) { post in
+                    ForEach(homeVM.getPostsForUser(username: "@clauarcienegam")) { post in
                         PostView(home: post)
                         
                     }
