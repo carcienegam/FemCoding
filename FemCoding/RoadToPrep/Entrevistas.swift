@@ -7,7 +7,7 @@ struct Entrevistas: View {
 
     var body: some View {
         VStack {
-            TabStyleTiktok(showHerOnly: .constant(false))
+            TabMentoria(showTecOnly: .constant(false))
             ScrollView {
                 VStack {
                     Circle()
