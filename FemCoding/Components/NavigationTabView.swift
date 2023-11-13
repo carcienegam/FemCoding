@@ -15,13 +15,7 @@ struct NavigationTabView: View {
                 .padding(.top, 20)
                 .foregroundColor(.white)
                 .toolbar {
-                    // Placeholders for toolbar items if needed
-                    ToolbarItem(placement: .navigationBarLeading) {
-                        NavigationLink(destination: ProfileView()){
-                                Image(systemName: "person.circle")
-                                    .font(.title)
-                            }
-                    }
+    
                     ToolbarItem(placement: .navigationBarTrailing) {
                         NavigationLink(destination: Events()){
                            Text("Eventos")
@@ -56,6 +50,12 @@ struct NavigationTabView: View {
                        .tabItem{
                            Label("Apoyo", systemImage: "figure.and.child.holdinghands")
                        }
+                    
+                    ProfileView()
+                       .tabItem{
+                           Label("Perfil", systemImage: "person")
+                       }
+
                 }
             }
         }

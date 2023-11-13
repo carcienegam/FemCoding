@@ -12,6 +12,11 @@
 		616832772AFDC90900DADE95 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616832762AFDC90900DADE95 /* HomeModel.swift */; };
 		616832792AFDC91300DADE95 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616832782AFDC91300DADE95 /* Post.swift */; };
 		6168327F2AFDCAC100DADE95 /* TabStyleTiktok.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6168327E2AFDCAC100DADE95 /* TabStyleTiktok.swift */; };
+		FB22E24D2B01CFDB00A0A567 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB22E24C2B01CFDB00A0A567 /* ChatMessage.swift */; };
+		FB22E2502B01D03800A0A567 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB22E24F2B01D03800A0A567 /* ContentViewModel.swift */; };
+		FB22E2522B01D04B00A0A567 /* MessageOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB22E2512B01D04B00A0A567 /* MessageOwner.swift */; };
+		FB22E2542B01D06300A0A567 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB22E2532B01D06300A0A567 /* ChatView.swift */; };
+		FB22E25A2B01D1B300A0A567 /* ChatGPTSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FB22E2592B01D1B300A0A567 /* ChatGPTSwift */; };
 		FB279DA62AFD587800531513 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB279DA52AFD587800531513 /* Events.swift */; };
 		FB279DA82AFD590000531513 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB279DA72AFD590000531513 /* ProfileView.swift */; };
 		FB2A23092AFF419600A39812 /* RoadToBotton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2A23082AFF419600A39812 /* RoadToBotton.swift */; };
@@ -46,6 +51,10 @@
 		616832762AFDC90900DADE95 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		616832782AFDC91300DADE95 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		6168327E2AFDCAC100DADE95 /* TabStyleTiktok.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabStyleTiktok.swift; sourceTree = "<group>"; };
+		FB22E24C2B01CFDB00A0A567 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		FB22E24F2B01D03800A0A567 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		FB22E2512B01D04B00A0A567 /* MessageOwner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageOwner.swift; sourceTree = "<group>"; };
+		FB22E2532B01D06300A0A567 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		FB279DA52AFD587800531513 /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
 		FB279DA72AFD590000531513 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		FB2A23082AFF419600A39812 /* RoadToBotton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadToBotton.swift; sourceTree = "<group>"; };
@@ -80,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB22E25A2B01D1B300A0A567 /* ChatGPTSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +107,17 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		FB22E24E2B01CFE000A0A567 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				FB22E24C2B01CFDB00A0A567 /* ChatMessage.swift */,
+				FB22E24F2B01D03800A0A567 /* ContentViewModel.swift */,
+				FB22E2512B01D04B00A0A567 /* MessageOwner.swift */,
+				FB22E2532B01D06300A0A567 /* ChatView.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
 		FB2A230C2B004C8500A39812 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +132,7 @@
 		FB5B9FF72AFD4DFC00D94C7E = {
 			isa = PBXGroup;
 			children = (
+				FB22E24E2B01CFE000A0A567 /* Chat */,
 				FB2A230C2B004C8500A39812 /* Profile */,
 				616832712AFDC8BB00DADE95 /* Home */,
 				FB5BA0022AFD4DFC00D94C7E /* FemCoding */,
@@ -196,6 +218,9 @@
 			dependencies = (
 			);
 			name = FemCoding;
+			packageProductDependencies = (
+				FB22E2592B01D1B300A0A567 /* ChatGPTSwift */,
+			);
 			productName = FemCoding;
 			productReference = FB5BA0002AFD4DFC00D94C7E /* FemCoding.app */;
 			productType = "com.apple.product-type.application";
@@ -224,6 +249,9 @@
 				Base,
 			);
 			mainGroup = FB5B9FF72AFD4DFC00D94C7E;
+			packageReferences = (
+				FB22E2582B01D1B300A0A567 /* XCRemoteSwiftPackageReference "ChatGPTSwift" */,
+			);
 			productRefGroup = FB5BA0012AFD4DFC00D94C7E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -254,6 +282,7 @@
 				FBE7597D2AFD508D00075B44 /* Entrevistas.swift in Sources */,
 				FB2A23122B00515000A39812 /* Profile.swift in Sources */,
 				FB5BA0062AFD4DFC00D94C7E /* ContentView.swift in Sources */,
+				FB22E2542B01D06300A0A567 /* ChatView.swift in Sources */,
 				FB2A230E2B004CC800A39812 /* ProfileViewModel.swift in Sources */,
 				FB5BA0042AFD4DFC00D94C7E /* FemCodingApp.swift in Sources */,
 				FBC4D2812AFE265700F9958B /* UnderConstruction.swift in Sources */,
@@ -263,6 +292,7 @@
 				FBE759832AFD546F00075B44 /* GeneralButton.swift in Sources */,
 				FBE759862AFD548700075B44 /* GeneralPickerField.swift in Sources */,
 				FBE759882AFD549400075B44 /* GeneralTextField.swift in Sources */,
+				FB22E24D2B01CFDB00A0A567 /* ChatMessage.swift in Sources */,
 				FBE7597B2AFD508000075B44 /* Curriculum.swift in Sources */,
 				FBE7596E2AFD500100075B44 /* AuthenticationView.swift in Sources */,
 				FBE759702AFD500C00075B44 /* Login.swift in Sources */,
@@ -273,10 +303,12 @@
 				616832752AFDC8F600DADE95 /* HomeViewModel.swift in Sources */,
 				6168327F2AFDCAC100DADE95 /* TabStyleTiktok.swift in Sources */,
 				FBE759722AFD502B00075B44 /* Register.swift in Sources */,
+				FB22E2502B01D03800A0A567 /* ContentViewModel.swift in Sources */,
 				FB4990542AFD6FCE00BA4CB1 /* Sidebar.swift in Sources */,
 				616832732AFDC8E800DADE95 /* HomeView.swift in Sources */,
 				616832772AFDC90900DADE95 /* HomeModel.swift in Sources */,
 				FB2A23092AFF419600A39812 /* RoadToBotton.swift in Sources */,
+				FB22E2522B01D04B00A0A567 /* MessageOwner.swift in Sources */,
 				616832792AFDC91300DADE95 /* Post.swift in Sources */,
 				FBE759812AFD50AA00075B44 /* RoadtoPrep.swift in Sources */,
 			);
@@ -477,6 +509,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FB22E2582B01D1B300A0A567 /* XCRemoteSwiftPackageReference "ChatGPTSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/ChatGPTSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FB22E2592B01D1B300A0A567 /* ChatGPTSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB22E2582B01D1B300A0A567 /* XCRemoteSwiftPackageReference "ChatGPTSwift" */;
+			productName = ChatGPTSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FB5B9FF82AFD4DFC00D94C7E /* Project object */;
 }

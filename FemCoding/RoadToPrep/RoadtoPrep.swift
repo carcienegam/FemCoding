@@ -19,7 +19,7 @@ struct RoadtoPrep: View {
             CustomButton(
                 image: Image("Mentoria"),
                 text: "Mentoria",
-                destinationView: AnyView(Mentoria())
+                destinationView: AnyView(ChatView())
             )
             
             CustomButton(
