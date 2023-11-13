@@ -4,6 +4,7 @@ struct NavigationTabView: View {
     @State private var isDetailViewPresented = false
     @State private var isSidebar = false
 
+
     var body: some View{
                 
         NavigationView {
@@ -32,7 +33,7 @@ struct NavigationTabView: View {
                 TabView() {
                     VStack {
                         HomeView()
-                            .environmentObject(HomeViewModel())
+                           
                         
                         Spacer()
 
@@ -63,6 +64,5 @@ struct NavigationTabView: View {
 struct NavigationTabView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationTabView()
-            .environmentObject(HomeViewModel())
     }
 }

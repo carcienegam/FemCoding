@@ -36,6 +36,7 @@ struct ProfileView: View {
                     
                     ForEach(homeVM.getPostsForUser(username: "@clauarciengam")) { post in
                         PostView(home: post)
+                        
                     }
                 }
                 

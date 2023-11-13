@@ -12,6 +12,7 @@ struct Login: View {
     @State var username = ""
     @State private var password = ""
     @State private var isInHome = false
+    @StateObject var homeVM = HomeViewModel()
     
     var body: some View {
         VStack{
@@ -36,7 +37,7 @@ struct Login: View {
                 .padding(.horizontal, 100)
                 .padding(.top, 25)
             
-            NavigationLink(destination: NavigationTabView(), isActive: $isInHome){
+            NavigationLink(destination: NavigationTabView().environmentObject(homeVM), isActive: $isInHome){
                 EmptyView()
             }
             
