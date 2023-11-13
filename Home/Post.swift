@@ -14,7 +14,7 @@ struct PostView: View {
 
     
     var body: some View {
-        VStack{
+        VStack(alignment: .leading){
 
             HStack{
                 Image(home.nombreImagen)
@@ -42,8 +42,18 @@ struct PostView: View {
                     .scaledToFit()
                     .frame(minWidth: 100.0)
             }
+            
         }
             HStack{
+                if home.isHer  == true {
+                    Text("Her")
+                        .font(.title3)
+                        .foregroundColor(.white)
+                        .padding(.horizontal,20)
+                        .background(Color("AccentColor"))
+                        .cornerRadius(15)
+                }
+
                 Spacer()
                 Image(systemName: "heart")
                     .foregroundColor(.red)

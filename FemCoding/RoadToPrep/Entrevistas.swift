@@ -4,10 +4,12 @@ struct Entrevistas: View {
     @State private var messages: [Message] = []
     @State private var answer: String = ""
     @State private var showYesNoButtons = true
+    @State private var showTecOnly = false
+    @StateObject var vm2 = selectedmanager2()
 
     var body: some View {
         VStack {
-            TabMentoria(showTecOnly: .constant(false))
+            TabMentoria(showTecOnly: $showTecOnly)
             ScrollView {
                 VStack {
                     Circle()
@@ -67,9 +69,14 @@ struct Entrevistas: View {
                 .padding()
             }
         }
+        .onChange(of: vm2.selected) { newSelectedValue in
+            showTecOnly = newSelectedValue == .cond
+        }
         .navigationBarTitle("Chat with AI")
         .onAppear {
-            messages.append(Message(text: "¿Puedes explicar la complejidad del tiempo en los algoritmos?", isUser: false))
+            showTecOnly ?
+            messages.append(Message(text: "¿Puedes explicar la complejidad del tiempo en los algoritmos?", isUser: false)) :
+            messages.append(Message(text: "¿Cuál ha sido una ocasión en la que demostraste habilidades de liderazgo?", isUser: false))
         }
     }
 

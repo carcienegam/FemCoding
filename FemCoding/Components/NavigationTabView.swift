@@ -13,13 +13,12 @@ struct NavigationTabView: View {
                 HStack {
                 
                 }
-                .padding(.top, 20)
+                .padding(.top, 10)
                 .foregroundColor(.white)
                 .toolbar {
     
                     ToolbarItem(placement: .navigationBarTrailing) {
                         NavigationLink(destination: Events()){
-                           Text("Eventos")
                            Image(systemName: "calendar")
                        }
                     }

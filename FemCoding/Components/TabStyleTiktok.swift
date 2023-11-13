@@ -68,7 +68,7 @@ struct TabStyleTiktok: View {
             })
         }
         .padding(.vertical,-1)
-        .padding(.bottom, 5)
+        .padding(.bottom, 15)
     }
 }
 

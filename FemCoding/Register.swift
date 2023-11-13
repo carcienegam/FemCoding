@@ -55,7 +55,7 @@ struct Register: View {
                 .padding(.horizontal, 100)
                 .padding(.top, 20)
             
-            NavigationLink(destination: NavigationTabView(), isActive: $isInHome){
+            NavigationLink(destination: NavigationTabView().environmentObject(HomeViewModel()), isActive: $isInHome){
                 EmptyView()
             }
             
