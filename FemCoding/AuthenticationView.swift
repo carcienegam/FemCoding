@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AuthenticationView: View {
+ struct AuthenticationView: View {
     
     @State private var isLogingin = false
     @State private var isForgotPassword = false

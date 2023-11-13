@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+ 
 struct RoadtoPrep: View {
     
     @State private var isRegistering = false
@@ -31,7 +32,7 @@ struct RoadtoPrep: View {
             CustomButton(
                 image: Image("Entrevistas"),
                 text: "Entrevista",
-                destinationView: AnyView(Entrevistas())
+                destinationView: AnyView(ChatView())
             )
             
             CustomButton(
