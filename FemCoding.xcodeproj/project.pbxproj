@@ -12,6 +12,7 @@
 		616832772AFDC90900DADE95 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616832762AFDC90900DADE95 /* HomeModel.swift */; };
 		616832792AFDC91300DADE95 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616832782AFDC91300DADE95 /* Post.swift */; };
 		6168327F2AFDCAC100DADE95 /* TabStyleTiktok.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6168327E2AFDCAC100DADE95 /* TabStyleTiktok.swift */; };
+		61CE9AA52B02089E001FCF8D /* TabMentoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CE9AA42B02089E001FCF8D /* TabMentoria.swift */; };
 		FB22E24D2B01CFDB00A0A567 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB22E24C2B01CFDB00A0A567 /* ChatMessage.swift */; };
 		FB22E2502B01D03800A0A567 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB22E24F2B01D03800A0A567 /* ContentViewModel.swift */; };
 		FB22E2522B01D04B00A0A567 /* MessageOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB22E2512B01D04B00A0A567 /* MessageOwner.swift */; };
@@ -51,6 +52,7 @@
 		616832762AFDC90900DADE95 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		616832782AFDC91300DADE95 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		6168327E2AFDCAC100DADE95 /* TabStyleTiktok.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabStyleTiktok.swift; sourceTree = "<group>"; };
+		61CE9AA42B02089E001FCF8D /* TabMentoria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMentoria.swift; sourceTree = "<group>"; };
 		FB22E24C2B01CFDB00A0A567 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
 		FB22E24F2B01D03800A0A567 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		FB22E2512B01D04B00A0A567 /* MessageOwner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageOwner.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 				FBE759872AFD549400075B44 /* GeneralTextField.swift */,
 				FBE759892AFD54A100075B44 /* NavigationTabView.swift */,
 				6168327E2AFDCAC100DADE95 /* TabStyleTiktok.swift */,
+				61CE9AA42B02089E001FCF8D /* TabMentoria.swift */,
 				FB2A23082AFF419600A39812 /* RoadToBotton.swift */,
 			);
 			path = Components;
@@ -306,6 +309,7 @@
 				FB22E2502B01D03800A0A567 /* ContentViewModel.swift in Sources */,
 				FB4990542AFD6FCE00BA4CB1 /* Sidebar.swift in Sources */,
 				616832732AFDC8E800DADE95 /* HomeView.swift in Sources */,
+				61CE9AA52B02089E001FCF8D /* TabMentoria.swift in Sources */,
 				616832772AFDC90900DADE95 /* HomeModel.swift in Sources */,
 				FB2A23092AFF419600A39812 /* RoadToBotton.swift in Sources */,
 				FB22E2522B01D04B00A0A567 /* MessageOwner.swift in Sources */,
