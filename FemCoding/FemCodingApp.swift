@@ -7,7 +7,8 @@
 
 import SwiftUI
 
- struct FemCodingApp: App {
+@main
+struct FemCodingApp: App {
     var body: some Scene {
         WindowGroup {
             AuthenticationView()
