@@ -28,16 +28,13 @@ struct NavigationTabView: View {
                        }
                     }
                 }
-                .foregroundColor(Color("AppleGray"))                
-                
-
-                // Main Content
+                .foregroundColor(Color("AppleGray"))
                 TabView() {
                     VStack {
                         HomeView()
                             .environmentObject(HomeViewModel())
                         
-                        Spacer() // Esto ocupará el espacio restante en el eje vertical
+                        Spacer()
 
                     }
                     .tabItem{
