@@ -29,7 +29,6 @@ class HomeViewModel : ObservableObject{
         home = HomeModel(titulo: "Evento", descripcion: "💻🚀 Únete a nuestro equipo. Buscamos ingenieras apasionadas para liderar proyectos innovadores. Tu talento es la clave para construir el futuro. ¡Aplica ahora! ", nombreImagenPost: "PostDani2", NombrePersona: "EmpresaX", nombreImagen: "fakecompany", questions: 3, isHer: true)
         arrHome.append(home)
         
-        
         home = HomeModel(titulo: "Oportunidades para mujeres", descripcion: "💻🚀 Únete a nuestro equipo. Buscamos ingenieras apasionadas para liderar proyectos innovadores. Tu talento es la clave para construir el futuro. ¡Aplica ahora! ", NombrePersona: "EmpresaX", nombreImagen: "fakecompany", questions: 3, isHer: true)
         arrHome.append(home)
         
@@ -50,6 +49,21 @@ class HomeViewModel : ObservableObject{
         
         home = HomeModel(titulo: "Visita a Microsoft en NYC", descripcion: "Esta semana santa tuve la oportunidad de viajar a Nueva York donde pudimos ir a las oficinas de Microsoft en Manhattan. En las oficinas nos dieron un recorrido y muchos tips de como aplicar.", nombreImagenPost: "PostClau2", NombrePersona:"@clauarcienegam", nombreImagen: "clau", questions: 5, isHer: false)
         arrHome.append(home)
+        
+        
+        home = HomeModel(titulo: "Swift 24h Hackaton ", descripcion: "Acompañanos en este Hackaton Online con Swift, estará muy retador y divertido.", nombreImagenPost: "PostEmpresaSwift", NombrePersona: "@CCMDev", nombreImagen: "SwiftHack", questions: 28, isHer: false)
+               arrHome.append(home)
+
+
+        home = HomeModel(titulo: "Speech: Mujeres en STEM ", descripcion: "Ven a este Speech acerca de la importancia de la igualdad de género en el ámbito laboral.", nombreImagenPost: "PostSpeech", NombrePersona: "@CCMDev", nombreImagen: "SpeechCCMDev", questions: 12, isHer: true)
+               arrHome.append(home)
+        
+        home = HomeModel(titulo: "Swift 24h Hackaton ", descripcion: "Acompañanos en este Hackaton Online con Swift, estará muy retador y divertido.", nombreImagenPost: "PostEmpresaSwift", NombrePersona: "@CCMDev", nombreImagen: "SwiftHack", questions: 28, isHer: false)
+                arrHome.append(home)
+
+
+         home = HomeModel(titulo: "Speech: Mujeres en STEM ", descripcion: "Ven a este Speech acerca de la importancia de la igualdad de género en el ámbito laboral.", nombreImagenPost: "PostSpeech", NombrePersona: "@CCMDev", nombreImagen: "SpeechCCMDev", questions: 12, isHer: true)
+                arrHome.append(home)
         
     }
     

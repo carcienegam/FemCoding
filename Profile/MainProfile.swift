@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ProfileInfoView: View {
+struct MainProfileInfoView: View {
     let systemImageName: String
     let title: String
     let content: String
@@ -23,7 +23,7 @@ struct ProfileInfoView: View {
     }
 }
 
-struct Profile: View {
+struct MainProfile: View {
     
     let profile : ProfileModel
     
@@ -37,6 +37,8 @@ struct Profile: View {
                     .clipShape(Circle())
                     .overlay(Circle().stroke(Color.white, lineWidth: 1))
                     .shadow(radius: 4)
+                    .padding(.horizontal, 10)
+
                 VStack{
                     Text(profile.followers)
                         .font(.system(size: 25, weight: .heavy))
@@ -44,6 +46,7 @@ struct Profile: View {
                         .font(.system(size: 15))
                         .bold()
                 }
+                .padding(.horizontal, 10)
                 
                 VStack{
                     Text(profile.following)
@@ -52,17 +55,10 @@ struct Profile: View {
                         .font(.system(size: 15))
                         .bold()
                 }
+                .padding(.horizontal, 10)
+
                 
-                Button(action: {
-                                   print("Following tapped!")
-                }) {
-                    Text("Seguir")
-                        .foregroundColor(.white)
-                        .padding(.horizontal, 10)
-                        .padding(.vertical, 1)
-                        .background(Color("Yellow"))
-                        .cornerRadius(10)
-                }
+                Spacer()
             }
             .padding()
             
@@ -84,8 +80,8 @@ struct Profile: View {
     }
 }
 
-struct Profile_Previews: PreviewProvider {
+struct MainProfile_Previews: PreviewProvider {
     static var previews: some View {
-        Profile(profile: ProfileModel.defaultProfile)
+        MainProfile(profile: ProfileModel.defaultProfile)
     }
 }

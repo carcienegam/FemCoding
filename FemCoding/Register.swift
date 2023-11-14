@@ -47,20 +47,22 @@ struct Register: View {
             
             GeneralPickerField(selection: $gender, options: genderOptions)
                 .padding(.horizontal, 30)
-        
-                Button("Ingresar"){
-                    isInHome = true
-                }
-                .buttonStyle(GeneralButton())
-                .padding(.horizontal, 100)
-                .padding(.top, 20)
             
-            NavigationLink(destination: NavigationTabView().environmentObject(HomeViewModel()), isActive: $isInHome){
-                EmptyView()
+            Button("Registrar"){
+                isInHome = true
             }
+            .buttonStyle(GeneralButton())
+            .padding(.horizontal, 100)
+            .padding(.top, 20)
             
+            NavigationLink(destination: InfoUser(), isActive: $isInHome){
+                NavigationLink(destination: InfoUser(), isActive: $isInHome){
+                    EmptyView()
+                }
+                
+            }
+            .padding()
         }
-        .padding()
     }
 }
 

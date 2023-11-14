@@ -13,6 +13,9 @@
 		616832792AFDC91300DADE95 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616832782AFDC91300DADE95 /* Post.swift */; };
 		6168327F2AFDCAC100DADE95 /* TabStyleTiktok.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6168327E2AFDCAC100DADE95 /* TabStyleTiktok.swift */; };
 		61CE9AA52B02089E001FCF8D /* TabMentoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CE9AA42B02089E001FCF8D /* TabMentoria.swift */; };
+		FB0726362B02119400B0ED61 /* InfoUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0726352B02119300B0ED61 /* InfoUser.swift */; };
+		FB080F1F2B03719F00910E4A /* conductual.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB080F1E2B03719F00910E4A /* conductual.swift */; };
+		FB080F212B0371AE00910E4A /* tecnica.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB080F202B0371AE00910E4A /* tecnica.swift */; };
 		FB22E24D2B01CFDB00A0A567 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB22E24C2B01CFDB00A0A567 /* ChatMessage.swift */; };
 		FB22E2502B01D03800A0A567 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB22E24F2B01D03800A0A567 /* ContentViewModel.swift */; };
 		FB22E2522B01D04B00A0A567 /* MessageOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB22E2512B01D04B00A0A567 /* MessageOwner.swift */; };
@@ -22,7 +25,7 @@
 		FB279DA82AFD590000531513 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB279DA72AFD590000531513 /* ProfileView.swift */; };
 		FB2A23092AFF419600A39812 /* RoadToBotton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2A23082AFF419600A39812 /* RoadToBotton.swift */; };
 		FB2A230B2AFF4C4100A39812 /* Mentoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2A230A2AFF4C4100A39812 /* Mentoria.swift */; };
-		FB2A230E2B004CC800A39812 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2A230D2B004CC800A39812 /* ProfileViewModel.swift */; };
+		FB2A230E2B004CC800A39812 /* MainProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2A230D2B004CC800A39812 /* MainProfile.swift */; };
 		FB2A23102B004D9700A39812 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2A230F2B004D9700A39812 /* ProfileModel.swift */; };
 		FB2A23122B00515000A39812 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2A23112B00515000A39812 /* Profile.swift */; };
 		FB4990522AFD6C5500BA4CB1 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4990512AFD6C5500BA4CB1 /* SearchBar.swift */; };
@@ -31,6 +34,10 @@
 		FB5BA0062AFD4DFC00D94C7E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5BA0052AFD4DFC00D94C7E /* ContentView.swift */; };
 		FB5BA0082AFD4E0100D94C7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5BA0072AFD4E0100D94C7E /* Assets.xcassets */; };
 		FB5BA00B2AFD4E0100D94C7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5BA00A2AFD4E0100D94C7E /* Preview Assets.xcassets */; };
+		FBBCEBB12B02A9F2006EEECC /* ProfileDani.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBCEBB02B02A9F2006EEECC /* ProfileDani.swift */; };
+		FBBCEBB32B02BAC5006EEECC /* ProfileVale.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBCEBB22B02BAC5006EEECC /* ProfileVale.swift */; };
+		FBBCEBB52B02BBE1006EEECC /* ButtonTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBCEBB42B02BBE1006EEECC /* ButtonTag.swift */; };
+		FBBCEBB72B02BD15006EEECC /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBCEBB62B02BD15006EEECC /* TagListView.swift */; };
 		FBC4D2812AFE265700F9958B /* UnderConstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC4D2802AFE265700F9958B /* UnderConstruction.swift */; };
 		FBE7596E2AFD500100075B44 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE7596D2AFD500100075B44 /* AuthenticationView.swift */; };
 		FBE759702AFD500C00075B44 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE7596F2AFD500C00075B44 /* Login.swift */; };
@@ -53,6 +60,9 @@
 		616832782AFDC91300DADE95 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		6168327E2AFDCAC100DADE95 /* TabStyleTiktok.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabStyleTiktok.swift; sourceTree = "<group>"; };
 		61CE9AA42B02089E001FCF8D /* TabMentoria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMentoria.swift; sourceTree = "<group>"; };
+		FB0726352B02119300B0ED61 /* InfoUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoUser.swift; sourceTree = "<group>"; };
+		FB080F1E2B03719F00910E4A /* conductual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = conductual.swift; sourceTree = "<group>"; };
+		FB080F202B0371AE00910E4A /* tecnica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tecnica.swift; sourceTree = "<group>"; };
 		FB22E24C2B01CFDB00A0A567 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
 		FB22E24F2B01D03800A0A567 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		FB22E2512B01D04B00A0A567 /* MessageOwner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageOwner.swift; sourceTree = "<group>"; };
@@ -61,7 +71,7 @@
 		FB279DA72AFD590000531513 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		FB2A23082AFF419600A39812 /* RoadToBotton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadToBotton.swift; sourceTree = "<group>"; };
 		FB2A230A2AFF4C4100A39812 /* Mentoria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mentoria.swift; sourceTree = "<group>"; };
-		FB2A230D2B004CC800A39812 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		FB2A230D2B004CC800A39812 /* MainProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProfile.swift; sourceTree = "<group>"; };
 		FB2A230F2B004D9700A39812 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 		FB2A23112B00515000A39812 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		FB4990512AFD6C5500BA4CB1 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
@@ -71,6 +81,10 @@
 		FB5BA0052AFD4DFC00D94C7E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FB5BA0072AFD4E0100D94C7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB5BA00A2AFD4E0100D94C7E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FBBCEBB02B02A9F2006EEECC /* ProfileDani.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDani.swift; sourceTree = "<group>"; };
+		FBBCEBB22B02BAC5006EEECC /* ProfileVale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVale.swift; sourceTree = "<group>"; };
+		FBBCEBB42B02BBE1006EEECC /* ButtonTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTag.swift; sourceTree = "<group>"; };
+		FBBCEBB62B02BD15006EEECC /* TagListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagListView.swift; sourceTree = "<group>"; };
 		FBC4D2802AFE265700F9958B /* UnderConstruction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderConstruction.swift; sourceTree = "<group>"; };
 		FBE7596D2AFD500100075B44 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		FBE7596F2AFD500C00075B44 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
@@ -124,8 +138,10 @@
 			isa = PBXGroup;
 			children = (
 				FB279DA72AFD590000531513 /* ProfileView.swift */,
-				FB2A230D2B004CC800A39812 /* ProfileViewModel.swift */,
+				FBBCEBB02B02A9F2006EEECC /* ProfileDani.swift */,
+				FB2A230D2B004CC800A39812 /* MainProfile.swift */,
 				FB2A230F2B004D9700A39812 /* ProfileModel.swift */,
+				FBBCEBB22B02BAC5006EEECC /* ProfileVale.swift */,
 				FB2A23112B00515000A39812 /* Profile.swift */,
 			);
 			path = Profile;
@@ -184,9 +200,11 @@
 			children = (
 				FBE7597A2AFD508000075B44 /* Curriculum.swift */,
 				FBE7597C2AFD508D00075B44 /* Entrevistas.swift */,
+				FB080F1E2B03719F00910E4A /* conductual.swift */,
 				FBE7597E2AFD509B00075B44 /* OfertaNegociacion.swift */,
 				FBE759802AFD50AA00075B44 /* RoadtoPrep.swift */,
 				FB2A230A2AFF4C4100A39812 /* Mentoria.swift */,
+				FB080F202B0371AE00910E4A /* tecnica.swift */,
 			);
 			path = RoadToPrep;
 			sourceTree = "<group>";
@@ -200,7 +218,10 @@
 				FBE759892AFD54A100075B44 /* NavigationTabView.swift */,
 				6168327E2AFDCAC100DADE95 /* TabStyleTiktok.swift */,
 				61CE9AA42B02089E001FCF8D /* TabMentoria.swift */,
+				FBBCEBB62B02BD15006EEECC /* TagListView.swift */,
 				FB2A23082AFF419600A39812 /* RoadToBotton.swift */,
+				FB0726352B02119300B0ED61 /* InfoUser.swift */,
+				FBBCEBB42B02BBE1006EEECC /* ButtonTag.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -286,9 +307,13 @@
 				FB2A23122B00515000A39812 /* Profile.swift in Sources */,
 				FB5BA0062AFD4DFC00D94C7E /* ContentView.swift in Sources */,
 				FB22E2542B01D06300A0A567 /* ChatView.swift in Sources */,
-				FB2A230E2B004CC800A39812 /* ProfileViewModel.swift in Sources */,
+				FBBCEBB12B02A9F2006EEECC /* ProfileDani.swift in Sources */,
+				FB2A230E2B004CC800A39812 /* MainProfile.swift in Sources */,
 				FB5BA0042AFD4DFC00D94C7E /* FemCodingApp.swift in Sources */,
+				FBBCEBB52B02BBE1006EEECC /* ButtonTag.swift in Sources */,
 				FBC4D2812AFE265700F9958B /* UnderConstruction.swift in Sources */,
+				FBBCEBB72B02BD15006EEECC /* TagListView.swift in Sources */,
+				FB080F212B0371AE00910E4A /* tecnica.swift in Sources */,
 				FBE7597F2AFD509B00075B44 /* OfertaNegociacion.swift in Sources */,
 				FBE7598A2AFD54A100075B44 /* NavigationTabView.swift in Sources */,
 				FB279DA62AFD587800531513 /* Events.swift in Sources */,
@@ -299,6 +324,7 @@
 				FBE7597B2AFD508000075B44 /* Curriculum.swift in Sources */,
 				FBE7596E2AFD500100075B44 /* AuthenticationView.swift in Sources */,
 				FBE759702AFD500C00075B44 /* Login.swift in Sources */,
+				FB080F1F2B03719F00910E4A /* conductual.swift in Sources */,
 				FB2A23102B004D9700A39812 /* ProfileModel.swift in Sources */,
 				FBE759742AFD503700075B44 /* Splash.swift in Sources */,
 				FB279DA82AFD590000531513 /* ProfileView.swift in Sources */,
@@ -307,10 +333,12 @@
 				6168327F2AFDCAC100DADE95 /* TabStyleTiktok.swift in Sources */,
 				FBE759722AFD502B00075B44 /* Register.swift in Sources */,
 				FB22E2502B01D03800A0A567 /* ContentViewModel.swift in Sources */,
+				FBBCEBB32B02BAC5006EEECC /* ProfileVale.swift in Sources */,
 				FB4990542AFD6FCE00BA4CB1 /* Sidebar.swift in Sources */,
 				616832732AFDC8E800DADE95 /* HomeView.swift in Sources */,
 				61CE9AA52B02089E001FCF8D /* TabMentoria.swift in Sources */,
 				616832772AFDC90900DADE95 /* HomeModel.swift in Sources */,
+				FB0726362B02119400B0ED61 /* InfoUser.swift in Sources */,
 				FB2A23092AFF419600A39812 /* RoadToBotton.swift in Sources */,
 				FB22E2522B01D04B00A0A567 /* MessageOwner.swift in Sources */,
 				616832792AFDC91300DADE95 /* Post.swift in Sources */,
