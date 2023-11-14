@@ -8,13 +8,17 @@
 import SwiftUI
 
 
-struct ProfileView: View {
+struct ProfileVale: View {
+    
+    public static var defProfVale: ProfileModel {
+            return ProfileModel(profilePicture: "vale", followers: "1,006", following: "1,234", city: "Monterrey, N.L.", career: "Ing. en Tecnologías Computacionales", school: "Tecnológico de Monterrey", job: "Microsoft Corp.")
+        }
     
     @EnvironmentObject var homeVM: HomeViewModel
     
     var body: some View {
             VStack{
-                MainProfile(profile: ProfileModel.defaultProfile)
+                Profile(profile: ProfileVale.defProfVale)
                 ScrollView{
                     VStack(alignment: .leading){
                         HStack{
@@ -25,7 +29,8 @@ struct ProfileView: View {
                             Image(systemName: "pencil")
                         }
                         .padding(.bottom, 1)
-                        Text("Hola soy Claudia, estudiante de ingeniería en tecnologías computacionales en el Tec de Monterrey. Apasionada por aprender y emocionada por ser parte del mundo tecnológico.")
+                        Text("Escríbe algo aquí...")
+                            .foregroundColor(Color("DarkGray"))
                         
                     }
                     .padding()
@@ -34,9 +39,8 @@ struct ProfileView: View {
                     Divider()
                         .background(Color("AppleGray"))
                     
-                    ForEach(homeVM.getPostsForUser(username: "@clauarcienegam")) { post in
+                    ForEach(homeVM.getPostsForUser(username: "@valelimon")) { post in
                         PostView(home: post)
-                        
                     }
                 }
                 
@@ -45,9 +49,9 @@ struct ProfileView: View {
     }
 }
 
-struct ProfileView_Previews: PreviewProvider {
+struct ProfileVale_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView()
+        ProfileVale()
             .environmentObject(HomeViewModel())
     }
 }

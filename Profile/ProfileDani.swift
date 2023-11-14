@@ -8,13 +8,17 @@
 import SwiftUI
 
 
-struct ProfileView: View {
+struct ProfileDani: View {
+    
+    public static var defProfDani: ProfileModel {
+            return ProfileModel(profilePicture: "yo", followers: "2,500", following: "1,823", city: "Tuxtla Gtz, Chi.", career: "Ing. en Tecnologías Computacionales", school: "Tecnológico de Monterrey", job: "Uber Inc.")
+        }
     
     @EnvironmentObject var homeVM: HomeViewModel
     
     var body: some View {
             VStack{
-                MainProfile(profile: ProfileModel.defaultProfile)
+                Profile(profile: ProfileDani.defProfDani)
                 ScrollView{
                     VStack(alignment: .leading){
                         HStack{
@@ -25,7 +29,7 @@ struct ProfileView: View {
                             Image(systemName: "pencil")
                         }
                         .padding(.bottom, 1)
-                        Text("Hola soy Claudia, estudiante de ingeniería en tecnologías computacionales en el Tec de Monterrey. Apasionada por aprender y emocionada por ser parte del mundo tecnológico.")
+                        Text("¡Hola! Soy Dani. Actualmente estoy cursando el segundo año de la licenciatura en Ingeniería Informática en el Tecnológico de Monterrey Campus Monterrey. Mis principales intereses son el desarrollo de software, la innovación, la IA y el emprendimiento. ¡Estoy realmente emocionado por ser parte del futuro y desarrollo de la tecnología! 👩🏻‍💻")
                         
                     }
                     .padding()
@@ -34,7 +38,7 @@ struct ProfileView: View {
                     Divider()
                         .background(Color("AppleGray"))
                     
-                    ForEach(homeVM.getPostsForUser(username: "@clauarcienegam")) { post in
+                    ForEach(homeVM.getPostsForUser(username: "@danielaramosgarcia")) { post in
                         PostView(home: post)
                         
                     }
@@ -45,9 +49,9 @@ struct ProfileView: View {
     }
 }
 
-struct ProfileView_Previews: PreviewProvider {
+struct ProfileDani_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView()
+        ProfileDani()
             .environmentObject(HomeViewModel())
     }
 }
